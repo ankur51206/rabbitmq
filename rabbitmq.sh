@@ -4,6 +4,19 @@
 sudo apt-get update
 sudo apt-get install wget apt-transport-https -y
 
+# Install Erlang dependencies
+sudo apt-get install erlang-base \
+                     erlang-asn1 \
+                     erlang-inets \
+                     erlang-mnesia \
+                     erlang-os-mon \
+                     erlang-public-key \
+                     erlang-runtime-tools \
+                     erlang-ssl \
+                     erlang-syntax-tools \
+                     erlang-tools \
+                     erlang-xmerl -y
+
 # Add RabbitMQ repository key
 wget -O- https://www.rabbitmq.com/rabbitmq-release-signing-key.asc | sudo apt-key add -
 
