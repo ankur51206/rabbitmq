@@ -18,8 +18,8 @@ sudo apt-get install rabbitmq-server -y --fix-missing
 sudo rabbitmq-plugins enable rabbitmq_management
 
 # Set user password for RabbitMQ management console
-read -sp "Enter password for RabbitMQ management console: " password
-echo ""
+password="Ankur@51206"
+
 sudo rabbitmqctl add_user admin "$password"
 sudo rabbitmqctl set_user_tags admin administrator
 
